@@ -82,14 +82,16 @@ struct ContentView: View {
                                value: progress)
                     
                 }
+                
+                ButtonView(progress: $progress)
               
                 
-                Button("Start") {
-                    withAnimation {
-                        progress += 1
-                    }
-                }
-                .padding(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+//                Button("Start") {
+//                    withAnimation {
+//                        progress += 1
+//                    }
+//                }
+//                .padding(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             }
             .padding()
         }
